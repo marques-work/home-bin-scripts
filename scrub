@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# removes those annoying .DS_Store files that MacOS creates
+# takes an optional subdirectory argument
+find ${1:-.} -type f -name .DS_Store -delete
+
